@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+    padding: 0;
+    margin: 0;
+    font-family: roboto;
+    font-size: 14px;
+}
+.main-card-service{
+    display: flex;
+   background-color: #254e58;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: calc(33.3333333% - 10px);
+    display: block;
+    padding: 1rem;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #b6b7b8;
+}
+.card .card-image{
+    width: 100%;
+}
+.card .card-image img{
+    width: 100%;
+    border-radius: 20px;
+}
+.card .card-meta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    flex: 1;
+    width: 100%;
+}
+.main-card-service .card-meta .paragraph p{
+    color: black;
+    font-size: 1rem;
+}
+.main-card-service .card-meta .card-title h2{
+    color: black;
+    font-size: 1.5rem;
+}
+.card .card-meta .readmore{
+    padding: 5px 5px;
+    background-color: #254e58;
+    display: block;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+   
+    transition: transform 0.3s ease;
+
+}
+.card .card-meta .readmore:hover{
+    background-color: #125752;
+    transition: transform 0.3s ease;
+}
+@media (max-width:991px) {
+    .main-card-service{
+        display: block;
+    }
+    .main-card-service .card{
+        width: 100%;
+        display: flex;
+    }
+    .main-card-service .card .card-image{
+        width: 200px;
+    }
+    .main-card-service .card .card-image img{
+        height: 100%;
+    }
+    .main-card-service .card .card-meta{
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+.card .card-meta .readmore{
+    width: 80px;
+}
+    
+}
+@media (max-width:768px) {
+    .main-card-service{
+        padding: 20px;
+    }
+    .main-card-service .card{
+        display: block;
+    }
+    .main-card-service .card .card-image{
+        width: 100%;
+    }
+    .main-card-service .card .card-image img{
+        height: auto;
+    }
+    .main-card-service .card .card-meta{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 1rem;
+    }
+    
+}

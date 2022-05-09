@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+.section-p1{
+    padding: 40px 80px;
+
+}
+.section-m1{
+    margin: 40px 0;
+}
+body{
+    width: 100%;
+    
+}
+
+#hero{
+    background-color: #302f2f;
+    height: 500px;
+    background-image: url("background/irrigaton.jpg");
+    background-position: fit;
+  
+    margin-top: 70px;
+  
+  
+
+}
+
+
+#hero .hero-button{
+    
+    padding: 2px 7px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #088178;
+    margin-top: 30px;
+    transition: .3s;
+    text-decoration: none;
+}
+#hero .hero-button:hover{
+    background-color: #088178;
+}
